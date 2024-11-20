@@ -1,0 +1,14 @@
+Name,Sprite,Cooldown,Ammo,Effect,Passive,Cost,Type,Size
+Armored Core,,7.0 sec,none,Shield 10 . Give Shield items to the right of this + 5 Shield for the fight.,"When you use any item to the left of this, Charge this 1 second.",none,Weapon,Medium
+Chris Army Knife,,6.0 sec,∞,Deal 5 Damage . Shield 5 .,none,,"Friend, Weapon, Tool",Small
+Claw Arm,,4.0 sec,none,Deal 10 Damage .,"When this gains Haste , give this and the Weapon to the right + 5 Damage for this fight.",8,Weapon,Medium
+Cog,,4.0 sec,none,Haste an adjacent item for 1 seconds.,none,2,Tool,Small
+Companion Core,,7.0 sec,none,Haste your Friends 1 seconds.,"When you use another Friend, Charge this 1 second.",none,"Core, Friend, Unsellable",Medium
+Critical Core,,8.0 sec,∞,Deal 70 Damage .,"This and items to the right of this have + 15 Crit Chance . When you use any item on the left, Charge this 1 second. When you Crit with any item, Charge this 1 second.",none,"Core, Weapon, Unsellable",Medium
+Flamethrower,,5.0 sec,∞,Deal 25 Damage . Burn equal to 200/300% of this item's Damage .,none,8,"Weapon, Tool",Medium
+Heavy Combat Armor,,4.0 sec,∞,Deal 25 Damage . Shield 53 . Slow 3 other items for 2 seconds.,"When you use any item to the left of this, give this + 50 Damage for the fight. When you use any item to the right of this, give this + 50 Shield for the fight.",48,"Weapon, Core",Large
+Laser Pistol,,5.0 sec,,Deal 30 Damage .,none,4,Weapon,Small
+Lighter,,3.0 sec,∞,Burn 1 .,none,2,Tool,Small
+Plasma Grenade,,3.0 sec,1,Burn BOTH players 5 . Slow enemy items for 4 seconds.,none,4,none,Small
+Thermal Lance,,,none,Burn 7,"When this gains Haste , give this +1 Burn for this fight.",16,none,Medium
+Thrusters,,6.0 sec,none,Gain 2 Speed for this fight Burn 2,none,2,none,Small
