@@ -1,0 +1,81 @@
+Name,Effects,Cooldown,Types,Size
+Angry Balloon Bot,"Deal 10 Damage. When your Shield is broken, this gains Shield 10/20/40 for the fight.",3.0 sec,"Friend, Weapon",Medium
+Antimatter Chamber,Destroy this and 3 random Small enemy items for the fight.,10.0 sec,,Large
+Armored Core,"10. Give Shield items to the right of this +5/10/?? Shield for the fight. When you use any item to the left of this, Charge this 1 second.",7.0 sec,"Core, Unsellable",Medium
+Atomic Clock,Increase a random enemy item's cooldown by 1/2/3 seconds for the fight.,1.0 sec,Tool,Medium
+Balloon Bot,"Shield 10 When you use the Weapon to the right of this, this gains Shield 10/20/40 for the fight.",3.0 sec,Friend,Medium
+Barbed Wire,"Deal 5/?? Damage When you Shield, this gains 5/10/15/20 Damage for the fight.",4.0 sec,Weapon,Small
+Battery,Charge the item to the left of this 1/2/3/4 seconds.,4.0 sec,Tool,Small
+Bellelista,"Deal 20/??/?? Damage. When this gains Haste, this gains 10/??/?? Damage for the rest of the fight.",5.0 sec,"Friend, Weapon",Medium
+Beta Ray,"Freeze 1 Small item for 2/3/4 seconds. When you use the Core or any other Ray, this gains Haste for 2/3/4 seconds.",6.0 sec,Ray,"<font color=""#e79b54"">Small</font>"
+Bill Dozer,"Deal 20 Damage. When you use another Friend, this gains 10/20/30 Damage for the fight. Your other Friend's cooldowns are reduced by 20/30/40%.",5.0 sec,"Friend, Weapon, Vehicle",Large
+Blast Doors,x This has +Shield equal to 100%/200%/300%/400% of your Shield.,14.0 sec,,Medium
+Brick Buddy,"14/?/?/? When you use an adjacent Friend, this gains 5/?/?/? for the fight.",5.0 sec,"Vehicle, Friend",Medium
+Bunker,"When you take Damage, Shield equal to 30/40/50% of the damage dealt.",–,Property,Large
+Capacitor,Charge adjacent items 1 second.,10.0 / 9.0 / 8.0 / 7.0 sec,,Small
+Char Cole,"Burn 1/2/3. When you use another Friend, this gains 1/2/3 Burn for the fight",8.0 sec,Friend,Small
+Charging Station,"When you use the item to the left of this, Charge the item to the right 1/2 seconds.  When you use the Core, give it 20/40 Damage for the fight.",–,Tool,Medium
+Chemsnail,"Slow an item for 1/2/3/4 seconds. When you Slow, Poison 1/2/4/8 .",–,Friend,Medium
+Chris Army Knife,Deal 5/10/20/40 Damage 5/10/20/40,5.0 sec,"Friend, Weapon, Tool",Small
+Chronobarrier,50/100 Enemy cooldowns are increased by 1/2 seconds.,6.0 sec,,Medium
+Claw Arm,"Deal 10 Damage. When this gains Haste, this and the Weapon to the left of this gains 5/10 Damage for the fight.",4.0 sec,Weapon,Medium
+Clawrence,"Deal 10 Damage When you use a Friend, this gains 10/20/40 Damage for the fight.",5.0 sec,"Friend, Weapon",Medium
+Combat Core,"Deal 25 Damage Shield 25 When you use any item to the left of this, this gains 10/25/50 Damage for the fight. When you use any item to the right of this, this gains Shield 10/25/50 for the fight.",4.0 sec,"Weapon, Core, Vehicle",Large
+Companion Core,"Haste your Friends 1/2/3/4 seconds. When you use another Friend, Charge this 1 second.",7.0 sec,"Core, Friend, Unsellable",Medium
+Cool LEDs,"Slow 1 item for 1,2,3,4 seconds. When you use the Core, Slow an item for 1,2,3,4 seconds.",4.0 sec,,Small
+Coolant,Freeze 1 item for 1/2/3/4 seconds. Cleanse half your Burn,6.0 sec,,Small
+Cooling Fan,"Give the Core +5/10/15% Crit Chance. While you have Burn, reduce this item's cooldown by 50%.",5.0 sec,,Small
+Copper Ed,1/2/3/4 5/10/15/20,6.0 sec,Friend,Small
+Crane,"Deal 100/200 Damage When you use an adjacent Large item, this gains 30/60% Damage for the fight. When you use an adjacnet Medium item, this gains 20/40% Damage for the fight.",10.0 sec,"Vehicle, Weapon, Tool",Large
+Critical Core,"Deal 10/30/60/100 Damage This and items to the right of this have +15/20/25/30% Crit Chance. When you use any item to the left of this, Charge this 1 second. When you crit with any item, Charge this 1 second.",7.0 sec,Weapon,Medium
+Cryosphere,Freeze all items other than the Core for 2/3 seconds.,10.0 sec,Tool,Medium
+Crypto,"At the start of each hour, set this item's value to a number between 0 and 5/10/20/40",–,,Small
+Cybersecurity,Deal 20 Damage for each Weapon you have. This deals double/triple/quadruple Damage if this is the only Friend you have.,12.0 sec,"Friend, Weapon",Medium
+Diana-Saur,"Deal 40 damage. If your enemy has at least 6 / 5 / 4 items, destroy a small enemy item for the fight. When you destroy an item during combat, this and Momma-Saur permanently gain 10 / 20 / 40 damage.",8.0 sec,"Weapon, Friend",Medium
+DJ Rob0t,"Haste your Friends for 1 / 2 / 3 seconds. When you buy this, get 3 Nanobots. When you upgrade this, upgrade up to 3 Nanobots.",10.0 sec,Friend,Medium
+Dooley's Scarf,"Shield 20 / 40 / 60. When this or an adjacent item gains Freeze, Shield 20 / 40 / 60 and remove Freeze from it.",4.0 sec,,Medium
+Duct Tape,"Slow 1 item for 1/2/3/4 seconds. When you use an adjacent item, Shield 5/10/15/20",6.0 sec,Tool,Small
+Fiber Optics,"When you use your leftmost item, charge your rightmost item 1.0 / 2.0 seconds.",–,,Small
+Flamethrower,Deal 2 Damage. Burn equal to 200/300% of this item's Damage.,6.0 sec,"Weapon, Tool",Medium
+Force Field,10/?? Deal Damage equal to your Shield.,4.0 sec,Weapon,Large
+Fork Lift,Deal 50/100 Damage for each item to the left of this.  Haste this and items to the right of this for 2/4 seconds.,10.0 sec,"Vehicle, Weapon, Tool",Large
+Frozen Synapse,"When you Freeze, Haste the Core for 2 / 4 seconds.",–,Core,Medium
+Fuel Rod,"Burn both players 2 / 4 / 6 / 8. When you Burn, Haste an item for 1 / 2 / 3 / 4 second. When you Burn, Haste an item for 1 / 2 / 3 / 4 seconds.",4.0 sec,,Medium
+Gamma Ray,"Poison 3 / 4. When you use the Core or another Ray, this gains 3 / 4 Poison for the fight.",4.0 sec,,Small
+Hacksaw,"Deal 25 / 50 damage. The first time you use this each fight, destroy a small enemy item for the fight.",6.0 sec,"Weapon, Tool",Medium
+Hammlet,"Deal 15 / 30 / 45 damage. When you Slow, charge this 1.0 / 1.0 / 2.0 seconds.",9.0 sec,"Friend, Weapon, Tool",Small
+Ice 9000,"Freeze 1 item for 1 / 2 / 3 seconds. When you Freeze, Poison 1 / 2 / 3.",8.0 sec,Friend,Medium
+Induction Aegis,Shield 40 / 80. Burn 4 / 6. Slow your adjacent items for 1 / 1 seconds.,4.0 sec,,Small
+Isochoric Freezer,Freeze 1 item for 1 / 2 / 3 seconds.,7.0 sec,,Small
+Lens,"Give the core +5 / 10 damage for the fight. When this gains haste, charge it 1.0 / 2.0 seconds.",6.0 sec,,Small
+Letting off Steam,,–,,
+Lightbulb,Adjacent items gain 2 / 4 / 6 / 8% Crit chance for the fight.,3.0 sec,,Small
+Memory Card,"This gains 1 Value. When you sell this, give The Core + Damage equal to this item's value. 1 / 2 / 4 / 8",12.0 sec,,Small
+Metronome,"When you use an adjacent item, give the other adjacent item haste for 1 / 2 / 3 seconds.",–,,Small
+Miss Isles,"Deal 10 / 20 / 40 damage. When you use the Core, reload this. Multicast: 2",3.0 sec,"Weapon, Friend",Medium
+Momma-Saur,"Deal 120 damage. If your enemy has at least 5 / 4 items, destroy a small or medium enemy item for the fight. When you destroy an item during combat, this and Diana-Saur permanently gain 40 / 80 damage.",8.0 sec,"Friend, Weapon",Large
+Monitor Lizard,"Haste 1 item for ? / 2 / 4 seconds. When you Haste, Poison ?/ 1 / 2.",6.0 sec,Friend,Medium
+Motherboard,"Haste the Core for 2 / 3 / 4 seconds. When the Core gains Haste, give it +10 / 20 / 30 damage the fight.",5.0 sec,,Medium
+Nitro,Burn both players 4 / 6 / 8. Charge an item 1.0 / 2.0 / 3.0 seconds.,4.0 sec,,Small
+Nitrogen Hammer,"Deal 25 / 25 damage. Freeze 1 item for 1 / 2 seconds. When you freeze an item, this gains 25 / 50 Damage for the fight.",8.0 sec,Weapon,Medium
+Omega Ray,"Burn ? / 4 / 6. When you use the Core or another Ray, give your items + ? / 2 / 4 Burn for the fight.",6.0 sec,Ray,Small
+Overclocked,"The Core has its cooldown reduced by 10 / 15%. While you have Burn, double this effect.",–,,
+Pierre Conditioner,"Freeze 1 item for 1 / 2 seconds. When you use the Core, Freeze an item for 1 / 2 seconds.",5.0 sec,Friend,Medium
+Power Drill,"Deal 20 / 40 / 80/ 160 Damage  Burn yourself 3. When you Haste, Slow, Freeze, Poison or Burn, Charge this 1 / 1 / 1 / 2 seconds.",10.0 sec,"Weapon, Tool",Medium
+Pulse Rifle,"Deal 10 / 30 / 60 / 100 damage. This has +1 Multicast if it is adjacent to a Friend, +2 if it that Friend is your only Friend.",4.0 sec,Weapon,Medium
+Pylon,"Slow 1 item for 1 / 2 / 3 seconds. When you Slow, Haste an item for 1 / 2 / 3 seconds.",3.0 sec,Property,Large
+Pyrocarbon,"Shield 75 / 150. When you gain Burn, this gains Haste for 2 / 4 second.",6.0 sec,,Medium
+Race Carl,"Haste 1 item for 1/2/3 seconds. When you Haste, deal 10/20/30 Damage.",8.0 sec,"Friend, Weapon, Vehicle",Medium
+Railgun,"Deal 100/200 Damage. When you use the Core, Charge this 1/2 seconds. Multicast: 2",10.0 sec,Weapon,Large
+Red Button,Charge adjacent Large items 2.0 / 3.0 / 4.0 seconds.,6.0 sec,,Small
+Remote Control,Use the Core.,10.0 / 8.0 / 6.0 sec,Tool,Small
+Robotic Factory,Your Friends have +1 Multicast.,–,Property,Large
+Rocket Launcher,"Deal 10 / 20 / 30 damage. Burn 2 / 4 / 6. While your enemy has Burn, this has double damage. Multicast: 3",6.0 sec,Weapon,Medium
+Schematics,"When you upgrade an item, this gains 1 / 2 / 3 / 4 value. When you sell this, give the Core + Crit Chance equal to this item's value. Your items have + Crit Chance equal to this item's value.",–,,Medium
+Scrap Metal,"When you sell this, upgrade The Core and reduce its cooldown by 1 / 2 seconds.",–,,Medium
+Solar Farm,"Give your other items Haste for 2 / 3 / 4 seconds. While you or your enemy have Burn, reduce this item's cooldown by 50%.",8.0 sec,Property,Large
+Soldering Gun,Burn 1 / 2 / 3. This has +1 Multicast if it is adjacent to a Friend. This has +1 Multicast if it is adjacent to a Tool.,5.0 sec,Tool,Small
+Thrusters,Burn both players 2/3/4/5. Adjacent items have their cooldowns reduced by 6/9/12/15%.,5.0 sec,,Small
+Virus,"Poison 1 / 2 / 3. Destroy a small item on each player's board for the fight. When you destroy an item, this gains 5 / 10 / 15 Poison for the fight.",12.0 / 5.0 sec,,Small
+Weakpoint Detector,"Your Weapons gain 3/6/9/12 Damage for the fight. When you slow, Charge this 1/2/3/4 seconds.",6.0 sec,Tool,Medium
+Welding Torch,"Burn 4 / 6 / 8. When you Shield, this gains Haste for 1 / 2 / 3 seconds.",5.0 sec,Tool,Medium
