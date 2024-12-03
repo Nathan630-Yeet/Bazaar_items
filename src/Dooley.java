@@ -15,7 +15,11 @@ public class Dooley {
             boolean isFirstLine = true;
 
             while (scan.hasNextLine()) {
-                String line = scan.nextLine();
+                String line = scan.nextLine().trim();
+
+                if (line.isEmpty()) {
+                    continue;
+                }
 
                 if (isFirstLine) {
                     isFirstLine = false;
@@ -26,27 +30,15 @@ public class Dooley {
                     String[] values = line.split(",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)");
 
 
-                    if (values.length >= 5) {
-                        String size = values[0].trim();
-                        String type = values[1].trim();
-                        String effect = values[2].trim();
+                    String size = values.length > 4 ? values[4].trim() : "Unknown";
+                    String type = values.length > 3 ? values[3].trim() : "Unknown";
+                    String effect = values.length > 1 ? values[1].trim() : "Unknown";
+                    Double CD = values.length > 2 ? parseCooldown(values[2].trim()) : 0.0;
+                    String name = values.length > 0 ? values[0].trim() : "Unnamed";
 
-                        // Try parsing cooldown (CD); use a default if invalid
-                        Double CD;
-                        try {
-                            CD = Double.parseDouble(values[3].replaceAll("[^0-9.]", "").trim());
-                        } catch (NumberFormatException e) {
-                            CD = 0.0;
-                        }
 
-                        String name = values[4].trim();
-
-                        // Create an Item and add to the list
-                        Item item = new Item(size, type, effect, CD, name);
-                        items.add(item);
-                    } else {
-                        System.err.println("Invalid line format: " + line);
-                    }
+                    Item item = new Item(size, type, effect, CD, name);
+                    items.add(item);
                 } catch (Exception e) {
                     System.err.println("Error processing line: " + line);
                     e.printStackTrace();
@@ -59,8 +51,18 @@ public class Dooley {
 
         return items;
     }
+
+    // Helper method to parse the cooldown field
+    private static Double parseCooldown(String cd) {
+        try {
+            return Double.parseDouble(cd.replaceAll("[^0-9.]", "").trim());
+        } catch (NumberFormatException e) {
+            return 0.0;
+        }
+    }
+
     public static PriorityQueue<Item> prioritizeItems(ArrayList<Item> items) {
-        // Comparator to prioritize by Shield or DPS
+
         Comparator<Item> itemComparator = (item1, item2) -> {
             double item1Score = calculateScore(item1);
             double item2Score = calculateScore(item2);
