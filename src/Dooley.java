@@ -52,7 +52,6 @@ public class Dooley {
         return items;
     }
 
-    // Helper method to parse the cooldown field
     private static Double parseCooldown(String cd) {
         try {
             return Double.parseDouble(cd.replaceAll("[^0-9.]", "").trim());
@@ -67,7 +66,7 @@ public class Dooley {
             double item1Score = calculateScore(item1);
             double item2Score = calculateScore(item2);
 
-            // Higher score gets higher priority
+
             return Double.compare(item2Score, item1Score);
         };
 
