@@ -65,8 +65,6 @@ public class Dooley {
         Comparator<Item> itemComparator = (item1, item2) -> {
             double item1Score = calculateScore(item1);
             double item2Score = calculateScore(item2);
-
-
             return Double.compare(item2Score, item1Score);
         };
 
@@ -89,11 +87,11 @@ public class Dooley {
         }
 
         double damage = extractDamage(item.Effect);
-        if (item.CD > 0) { // Avoid division by zero
-            return damage / item.CD; // Calculate DPS
+        if (item.CD > 0) {
+            return damage / item.CD;
         }
 
-        return 0.0; // Default score for invalid items
+        return 0.0;
     }
 
     // Helper method to extract damage from the Effect field
@@ -110,7 +108,34 @@ public class Dooley {
         return 0.0;
     }
 
-    // Helper method to extract Shield value from the Effect field
+    private static double keywordExtract(String effect){
+        String[] keywords = {"freeze", "haste", "crit", "destroy", "charge", "burn", "slow", "poison"};
+
+        double score = 0.0;
+
+
+        String lowerEffect = effect.toLowerCase();
+
+        for (String keyword : keywords) {
+            if (lowerEffect.contains(keyword)) {
+                score += 1.0;
+            }
+        }
+
+        return score;
+    }
+    public static ArrayList<Item> filterByBuild(ArrayList<Item> items, String buildType) {
+        ArrayList<Item> filteredItems = new ArrayList<>();
+        String keyword = buildType.toLowerCase();
+
+        for (Item item : items) {
+            if (item.Effect.toLowerCase().contains(keyword)) {
+                filteredItems.add(item);
+            }
+        }
+
+        return filteredItems;
+    }
     private static double extractShield(String effect) {
         try {
             if (effect.toLowerCase().contains("shield")) {
@@ -121,7 +146,7 @@ public class Dooley {
                 }
             }
         } catch (Exception e) {
-            // If parsing fails, return 0
+
         }
         return 0.0;
     }
