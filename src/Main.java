@@ -9,7 +9,6 @@ public class Main {
     public static void main(String[] args) {
         ArrayList<Item> items = Dooley.createItems("data/dooley_item.csv");
 
-        // Get user input for build type
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter a build type (freeze, haste, crit, destroy, charge, burn, slow, poison, weapon, shield): ");
         String buildType = scanner.nextLine();
@@ -17,7 +16,6 @@ public class Main {
 
         ArrayList<Item> filteredItems = Dooley.filterByBuild(items, buildType);
 
-        // Display filtered items
         if (filteredItems.isEmpty()) {
             System.out.println("No items found for the specified build type: " + buildType);
         } else {
@@ -29,19 +27,19 @@ public class Main {
         }
 
 
-//        for (Item item : items) {
-//            System.out.println("Name: " + item.name + ", Size: " + item.Size +
-//                    ", Type: " + item.Type + ", Effect: " + item.Effect +
-//                    ", Cooldown: " + item.CD);
-//        }
-//
-//        PriorityQueue<Item> priorityQueue = Dooley.prioritizeItems(items);
-//
-//        while (!priorityQueue.isEmpty()) {
-//            Item item = priorityQueue.poll();
-//            System.out.println("Name: " + item.name +
-//                    ", Effect: " + item.Effect +
-//                    ", priority score:" + Dooley.calculateScore(item));
-//        }
+        for (Item item : items) {
+            System.out.println("Name: " + item.name + ", Size: " + item.Size +
+                    ", Type: " + item.Type + ", Effect: " + item.Effect +
+                    ", Cooldown: " + item.CD);
+        }
+
+        PriorityQueue<Item> priorityQueue = Dooley.prioritizeItems(items);
+
+        while (!priorityQueue.isEmpty()) {
+            Item item = priorityQueue.poll();
+            System.out.println("Name: " + item.name +
+                    ", Effect: " + item.Effect +
+                    ", priority score:" + Dooley.calculateScore(item));
+        }
     }
 }

@@ -68,10 +68,8 @@ public class Dooley {
             return Double.compare(item2Score, item1Score);
         };
 
-        // PriorityQueue with custom comparator
         PriorityQueue<Item> priorityQueue = new PriorityQueue<>(itemComparator);
 
-        // Add all items to the queue
         for (Item item : items) {
             priorityQueue.add(item);
         }
@@ -79,11 +77,10 @@ public class Dooley {
         return priorityQueue;
     }
 
-    // Helper method to calculate score based on Shield or DPS
     public static double calculateScore(Item item) {
         double shieldValue = extractShield(item.Effect);
         if (shieldValue > 0) {
-            return shieldValue; // Prioritize Shield if present
+            return shieldValue;
         }
 
         double damage = extractDamage(item.Effect);
@@ -94,7 +91,6 @@ public class Dooley {
         return 0.0;
     }
 
-    // Helper method to extract damage from the Effect field
     private static double extractDamage(String effect) {
         try {
             String damageString = effect.replaceAll("[^0-9.]", " "); // Extract numeric parts
@@ -103,27 +99,43 @@ public class Dooley {
                 return Double.parseDouble(parts[0]); // Return the first numeric value as damage
             }
         } catch (Exception e) {
-            // If parsing fails, return 0
+
         }
         return 0.0;
     }
 
-    private static double keywordExtract(String effect){
-        String[] keywords = {"freeze", "haste", "crit", "destroy", "charge", "burn", "slow", "poison"};
-
+    private static double keywordExtract(String effect) {
+        String[] keywords = {"freeze", "haste", "destroy", "charge", "burn", "slow", "poison"};
         double score = 0.0;
-
 
         String lowerEffect = effect.toLowerCase();
 
         for (String keyword : keywords) {
-            if (lowerEffect.contains(keyword)) {
+            int index = lowerEffect.indexOf(keyword);
+            if (index != -1) {
                 score += 1.0;
+
+
+                String substring = lowerEffect.substring(index + keyword.length());
+                String[] parts = substring.split("\\s+");
+                for (String part : parts) {
+                    try {
+                        double value = Double.parseDouble(part.replaceAll("[^0-9.]", ""));
+                        score += value;
+                        break;
+                    } catch (NumberFormatException e) {
+                    }
+                }
             }
+        }
+
+        if (lowerEffect.contains("crit")) {
+            score += 0.5;
         }
 
         return score;
     }
+
     public static ArrayList<Item> filterByBuild(ArrayList<Item> items, String buildType) {
         ArrayList<Item> filteredItems = new ArrayList<>();
         String keyword = buildType.toLowerCase();
@@ -139,10 +151,10 @@ public class Dooley {
     private static double extractShield(String effect) {
         try {
             if (effect.toLowerCase().contains("shield")) {
-                String shieldString = effect.replaceAll("[^0-9.]", " "); // Extract numeric parts
+                String shieldString = effect.replaceAll("[^0-9.]", " ");
                 String[] parts = shieldString.trim().split("\\s+");
                 if (parts.length > 0) {
-                    return Double.parseDouble(parts[0]); // Return the first numeric value as Shield
+                    return Double.parseDouble(parts[0]);
                 }
             }
         } catch (Exception e) {
